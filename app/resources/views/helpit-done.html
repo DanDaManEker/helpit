@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../../libs/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../resources/css/appstyle.css">
+    <script src="../../../libs/jquery/jquery-2.2.4.js"></script>
+    <script src="../../../libs/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+    <script src="../../../libs/bootstrap-3.3.6-dist/js/app.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- IZACK!! need to have this always in one row -->
+                <a href="#" class="navbar-brand">
+                    <span class="glyphicon glyphicon-circle-arrow-left big-back-button" aria-hidden="true"></span>
+                </a>
+                <!--<button type="button" class="btn btn-default navbar-btn back-button">Back</button>-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-menu-hamburger big-menu-button"></span>
+                        </a>
+                        <ul class="dropdown-menu right-menu-dropdown">
+                            <li><a href="#">Create New Ticket</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">About Help IT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="logo">
+        <button type="button" class="btn btn-default helpitlogo"></button>
+    </div>
+    <!--whenever logo is pressed it will bring you back to the home page-->
+    </header>
+
+<div id="new-ticket-title">
+    <h1>Have No Fear</h1>
+
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div id="help-it-confirmation">
+                Your Help Desk Specialist Will Soon Be Here
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <button id="check-status-btn" type="button" class="btn button-style">CHECK TICKET STATUS</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <button id="submit-ticket-btn" type="button" class="btn button-style">SUBMIT NEW TICKET</button>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>

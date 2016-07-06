@@ -1,0 +1,310 @@
+header{
+    background-color: #2a3a49;
+    color: #808080;
+}
+.logo{
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 4px;
+}
+/*body table#helpit-new-ticket-form tbody td tr{*/
+    /*text-align: center;*/
+    /*!*help izack!!!!*!*/
+/*}*/
+table#helpit-new-ticket-form {
+    width: 19%;
+    margin-left: 27%;
+/*worked but not perfect*/
+}
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+}
+div#help-it-confirmation {
+    font-size: 2em;
+    margin-top: 37px;
+}
+#helpit-question{
+    font-size: 1.4em;
+    margin: 3px 0 17px 0;
+    border-bottom: 1px solid;
+    color: #fff;
+
+}
+.helpit-top-text{
+    font-size: 1.8em;
+}
+.helpit-amazing{
+    color: #fff;
+}
+.helpit-horrible{
+    color: #fff;
+}
+.helpit-checkboxes{
+    margin: 0 10px 0 9px;
+    width: 24px;
+    height: 24px;
+}
+p, label {
+ color: #f7f7f7;
+}
+/*!*.center-row {*!*/
+    /*!*max-width: 940px;*!*/
+/*!*.center-block();*!*/
+/*}*/
+span.glyphicon.glyphicon-ok {
+    font-size: 83px;
+    color: #3dc8a9;
+    margin: 45px 0 80px 0;
+}
+span#notifications {
+    border-radius: 12px;
+    border: 3px solid;
+    padding: 4px;
+}
+.btn-default.helpitlogo{
+    background: url("../images/logo.png") transparent no-repeat;
+    width: 81px;
+    height: 94px;
+    border: 0;
+    margin: 0 auto 5px auto;
+    display: block;
+}
+div#new-ticket-description{
+    text-align: center;
+}
+#check-status-btn{
+
+}
+textarea{
+    width:100%;
+}
+#check-status{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+ul.nav.navbar-nav.navbar-right {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+@media (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu {
+        background-color: #e4e2d5;
+        position: absolute;
+    }
+}
+ul.right-menu-dropdown{
+    left: initial;
+    right: 12px;
+}
+.big-back-button{
+    font-size: 1.8em;
+}
+.big-menu-button{
+    font-size: 1.8em;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
+}
+#submit-new{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+h1{
+    background-color: #7b96b3;
+    padding: 11px;
+    margin-top: 0;
+}
+.ticket-top-status-label, .send-review-button-label{
+    font-size: 9px;
+    display: block;
+}
+.ticket-top-status-number{
+    font-weight: bold;
+}
+#ticket-status-table{
+    width: 100%;
+}
+#ticket-status-table tr{
+    border-bottom: 1px solid #828c92;
+}
+#ticket-status-table tr:hover{
+    background-color:  #a7b9cd;
+    color: #051924 ;
+}
+#ticket-status-table td {
+    padding: 10px;
+}
+.ticket-status-icon{
+    width: 10px;
+    text-align: center;
+}
+.ticket-status-icon span:first-child{
+    font-size: 16px;
+}
+.ticket-status-date{
+    width:110px;
+}
+div#ticket-top-notifications td {
+    padding: 10px;
+}
+#tickets-status-body{
+    color: white;
+    
+}
+
+#ticket-top-notifications{
+    border-bottom: 1px solid #828c92;
+    text-align: center;
+
+}
+#ticket-top-notifications table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.notif-dropdown{
+    position: absolute;
+}
+#pc-name-example{
+    font-size: 0.7em;
+
+}
+/*#notifications{*/
+    /*border:1px solid cornflowerblue;*/
+    /*border-radius: 14px;*/
+    /*position: absolute;*/
+/*}*/
+.helpit-header-button{
+    padding: 5px 5px;
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 21px;
+    position: fixed;
+    color: white;
+}
+.survey-submit-btn{
+    margin-top: 20px;
+}
+#back-button{
+
+    display:inline-block;
+
+}
+#menu-button{
+    margin-right: 5px;
+    right: 0;
+
+}
+.helpitlogo:hover {
+    background-color: transparent;
+}
+/*belongs to the header*/
+body{
+    background-color: #051924;
+}
+form#create-user td {
+    padding-top:30px;
+}
+form#create-user td #desk-canvas-td {
+    padding-top:30px;
+}
+form#create-user td *{
+    width: 100%;
+    height:40px;
+    padding: 10px;
+    color: #6d7e8e;
+}
+form#create-user td input[type="button"], form#create-user td button[type="button"], form#create-user td button[type="button"] span{
+    color: white;
+    margin: 0;
+    border: none;
+}
+nav.navbar.navbar-default {
+    border-color: transparent;
+    background-color: transparent;
+}
+a.navbar-brand{
+    color:#fff !important;
+}
+a.dropdown-toggle{
+    color: #fff !important;
+}
+.container-padding{
+    padding-top: 30px;
+}
+#submit-btn{
+    background-color: #2ac7c9;
+    color: white;
+
+}
+.helpit-questions{
+    border-bottom:1px solid;
+    color: #fff;
+    padding: 10px 0 10px 0;
+
+}
+.button-style{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #2ac7c9;
+}
+.display-inline{
+    display: inline;
+}
+form#create-user td label{
+    height: 0;
+    color: #fff;
+}
+form#create-user {
+    margin: 0 30px;
+}
+#new-ticket-title{
+    text-align: center;
+    color: #fff;
+}
+table p{
+    color: #fff;
+}
+#helpit-new-ticket-form{
+    text-align: center;
+    margin: auto 0;
+}
+#new-ticket-description{
+    padding: 0 20px;
+}
+#desk-canvas{
+    border:2px solid;
+    background-color: darkgray;
+    height:120px !important;
+    padding-top: 2px !important;
+}
+#photo-btn{
+    background-color: #3d99c8;
+    border:none;
+    color: #fff;
+}
+*{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+}
+.Split{
+    border:none;
+    border-bottom: 1px solid black;
+    width:50px;
+}
+
+/*belongs to body*/
