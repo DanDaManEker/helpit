@@ -5,6 +5,7 @@ $(document).ready(function(){
     goStatusCheck();
     goNewSurvey();
     getStatusTable();
+    getStatusUserTable();
 });
 function goBack() {
     $(".big-back-button").click(function(){
@@ -48,19 +49,37 @@ function goSurvey(){
     });
 }
 
-function getStatusTable(){
-    $.ajax({url:"../../data/ticket",method:"get"
-})
-        .done(function(res) {
-            var tableHTML ='';
-            for(var i=0 ; i<res.length ;i++){
+function getStatusTable() {
+    $.ajax({
+            url: "../../data/ticket", method: "get"
+        })
+        .done(function (res) {
+            var tableHTML = '';
+            for (var i = 0; i < res.length; i++) {
                 tableHTML +=
-                    '<tr>'+
-                    '<td>'+ res[i].date +'</td>'+
-                    '<td>'+ res[i].status +'</td>'+
-                    '<td><span class="glyphicon glyphicon-'+res[i].icon+'" aria-hidden="true"></span></td>'+
+                    '<tr>' +
+                    '<td>' + res[i].date + '</td>' +
+                    '<td>' + res[i].status + '</td>' +
+                    '<td><span class="glyphicon glyphicon-' + res[i].icon + '" aria-hidden="true"></span></td>' +
                     '</tr>'
             }
             $("#ticket-status-tbody").html(tableHTML);
         });
+}
+    function getStatusUserTable() {
+        $.ajax({
+                url: "../../data/userTicket", method: "get"
+            })
+            .done(function (res) {
+                var tableHTML = '';
+                for (var i = 0; i < res.length; i++) {
+                    tableHTML +=
+                        '<tr>' +
+                        '<td>' + res[i].date + '</td>' +
+                        '<td>' + res[i].status + '</td>' +
+                        '<td><span class="glyphicon glyphicon-' + res[i].icon + '" aria-hidden="true"></span></td>' +
+                        '</tr>'
+                }
+                $("#ticket-status-user-tbody").html(tableHTML);
+            });
 }
