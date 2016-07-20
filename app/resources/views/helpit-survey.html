@@ -9,126 +9,167 @@
     <link rel="stylesheet" href="../../resources/css/appstyle.css">
     <script src="../../../libs/jquery/jquery-2.2.4.js"></script>
     <script src="../../../libs/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
-    <script src="../../../libs/bootstrap-3.3.6-dist/js/app.js"></script>
+    <script src="../script/app.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="#" class="navbar-brand">
-                        <span class="glyphicon glyphicon-circle-arrow-left big-back-button" aria-hidden="true"></span>
-                    </a>
-                </div>
+<!--form rules here-->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <span class="glyphicon glyphicon-circle-arrow-left big-back-button" aria-hidden="true"></span>
+                </a>
             </div>
-        </nav>
-        <div class="logo">
-            <button type="button" class="btn btn-default helpitlogo"></button>
         </div>
-    </header>
-        <div id="new-ticket-title">
-            <h1>Review Dan's Assistance</h1>
-        </div>
+    </nav>
+    <div class="logo">
+        <button type="button" class="btn btn-default helpitlogo"></button>
+    </div>
+</header>
+<div id="new-ticket-title">
+    <h1>Review Dan's Assistance</h1>
+</div>
 
-    <div class="container-fluid helpit-questions">
-            <div class="helpit-survey-row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div class="helpit-questions-text">
-                        Overall quality of support?
-                    </div>
-                    <div class="helpit-survey-tickboxes">
-                    <span class="helpit-horrible">Horrible!</span>
-                    <input type="checkbox" class="helpit-checkboxes">
-                    <input type="checkbox" class="helpit-checkboxes">
-                    <input type="checkbox" class="helpit-checkboxes">
-                    <input type="checkbox" class="helpit-checkboxes">
-                    <input type="checkbox" class="helpit-checkboxes">
-                    <span class="helpit-amazing">Amazing!</span>
-                    </div>
-                </div>
+<div class="container-fluid helpit-questions">
+    <div class="helpit-survey-row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="helpit-questions-text">
+                Overall quality of support?
             </div>
+            <span class="helpit-amazing">Amazing!</span>
+            <span class="helpit-horrible">Horrible!</span>
+            <label class="radio-inline">
+                <input type="radio" name="overallQualityOptions" id="overallquality1" value="option1">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="overallQualityOptions" id="overallQuality2" value="option2">
+            </label>
+
+            <label class="radio-inline">
+                <input type="radio" name="overallQualityOptions" id="overallQuality3" value="option3">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="overallQualityOptions" id="overallQuality4" value="option4">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="overallQualityOptions" id="overallQuality5" value="option5">
+            </label>
         </div>
     </div>
-        <div class="container-fluid helpit-questions">
-            <div class="helpit-survey-row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div class="helpit-questions-text">
-                        Knowledge and professionalism of the help desk support staff?
-                    </div>
-                    <div class="helpit-survey-tickboxes">
-                        <span class="helpit-horrible">Horrible!</span>
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <span class="helpit-amazing">Amazing!</span>
-                    </div>
-                </div>
+</div>
+<div class="container-fluid helpit-questions">
+    <div class="helpit-survey-row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="helpit-questions-text">
+                Knowledge and professionalism of the help desk support staff?
             </div>
-        </div>
-        <div class="container-fluid helpit-questions">
-            <div class="helpit-survey-row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div class="helpit-questions-text">
-                        Knowledge and professionalism of on-site support engineers?
-                    </div>
-                    <div class="helpit-survey-tickboxes">
-                        <span class="helpit-horrible">Horrible!</span>
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <span class="helpit-amazing">Amazing!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid helpit-questions">
-            <div class="helpit-survey-row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div class="helpit-questions-text">
-                        The ability of the help desk to solve your problem?
-                    </div>
-                    <div class="helpit-survey-tickboxes">
-                        <span class="helpit-horrible">Horrible!</span>
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <span class="helpit-amazing">Amazing!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid helpit-questions">
-            <div class="helpit-survey-row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div class="helpit-questions-text">
-                        Overall quality of support?
-                    </div>
-                    <div class="helpit-survey-tickboxes">
-                        <span class="helpit-horrible">Horrible!</span>
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <input type="checkbox" class="helpit-checkboxes">
-                        <span class="helpit-amazing">Amazing!</span>
-                    </div>
-                </div>
-            </div>
+            <span class="helpit-amazing">Amazing!</span>
+            <span class="helpit-horrible">Horrible!</span>
+            <label class="radio-inline">
+                <input type="radio" name="proKnowledgeOptions" id="proKnowledge1" value="option1">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="proKnowledgeOptions" id="proKnowledge2" value="option2">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="proKnowledgeOptions" id="proKnowledge3" value="option3">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="proKnowledgeOptions" id="proKnowledge4" value="option4">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="proKnowledgeOptions" id="proKnowledge5" value="option5">
+            </label>
         </div>
     </div>
-    <div class="col-xs-12">
-        <div class="form-group">
-            <label class="sr-only" for="submit-btn">Submit</label>
-            <button id="submit-btn" class="btn form-control survey-submit-btn" type="button">
-                <span class="glyphicon glyphicon-ok-circle display-inline" aria-hidden="true"></span>Submit
-            </button>
+</div>
+<div class="container-fluid helpit-questions">
+    <div class="helpit-survey-row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="helpit-questions-text">
+                Knowledge and professionalism of on-site support engineers?
+            </div>
+            <!--how fo i set that it will always stay in one line?-->
+            <span class="helpit-amazing">Amazing!</span>
+            <span class="helpit-horrible">Horrible!</span>
+            <label class="radio-inline">
+                <input type="radio" name="onSiteSupportOptions" id="onSiteSupport1" value="option1">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="onSiteSupportOptions" id="onSiteSupport2" value="option2">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="onSiteSupportOptions" id="onSiteSupport3" value="option3">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="onSiteSupportOptions" id="onSiteSupport4" value="option4">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="onSiteSupportOptions" id="onSiteSupport5" value="option5">
+            </label>
         </div>
     </div>
+</div>
+<div class="container-fluid helpit-questions">
+    <div class="helpit-survey-row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="helpit-questions-text">
+                The ability of the help desk to solve your problem?
+            </div>
+            <span class="helpit-amazing">Amazing!</span>
+            <span class="helpit-horrible">Horrible!</span>
+            <label class="radio-inline">
+                <input type="radio" name="problemSolverOptions" id="problemSolver1" value="option1">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="problemSolverOptions" id="problemSolver2" value="option2">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="problemSolverOptions" id="problemSolver3" value="option3">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="problemSolverOptions" id="problemSolver4" value="option4">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="problemSolverOptions" id="problemSolver5" value="option5">
+            </label>
+        </div>
+    </div>
+</div>
+<div class="container-fluid helpit-questions">
+    <div class="helpit-survey-row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="helpit-questions-text">
+                How educating was your support experience?
+            </div>
+            <span class="helpit-amazing">Amazing!</span>
+            <span class="helpit-horrible">Horrible!</span>
+            <label class="radio-inline">
+                <input type="radio" name="reducatingsupportOptions" id="reducatingsupport1" value="option1">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="reducatingsupportOptions" id="reducatingsupport2" value="option2">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="reducatingsupportOptions" id="reducatingsupport3" value="option3">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="reducatingsupportOptions" id="reducatingsupport4" value="option4">
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="reducatingsupportOptions" id="reducatingsupport5" value="option5">
+            </label>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="form-group">
+        <label class="sr-only" for="submit-btn">Submit</label>
+        <button id="submit-btn" class="btn form-control survey-submit-btn" type="button">
+            <span class="glyphicon glyphicon-ok-circle display-inline" aria-hidden="true"></span>Submit
+        </button>
+    </div>
+</div>
 </body>
 </html>

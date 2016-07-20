@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">-->
+    <title>Seating Location</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../../libs/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../resources/css/appstyle.css">
+    <script src="../../../libs/jquery/jquery-2.2.4.js"></script>
+    <script src="../../../libs/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+    <script src="../script/app.js"></script>
+    <!--here's where the red button icon will be-->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <span class="glyphicon glyphicon-circle-arrow-left big-back-button" aria-hidden="true"></span>
+                </a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-hamburger big-menu-button"></span>
+                                </a>
+                                <ul class="dropdown-menu right-menu-dropdown">
+                                    <li><a href="#">Review History</a></li>
+                                    <li><a href="#">Public Profile</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">About Help IT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="logo">
+        <button type="button" class="btn btn-default helpitlogo"></button>
+    </div>
+</header>
+<form id="create-user">
+
+    <div class="container-fluid container-padding">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <input type="text" disabled class="form-control" name="" value="Helen Haase">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <input type="text" disabled class="form-control" name="" value="Social Media Marketing">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <input type="text" name="" disabled class="form-control" value="CC-LPT-234A">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <input type="text" name="" disabled class="form-control" value="Wolverine Logan">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label class="sr-only" for="photo-btn">Photo</label>
+                    <input id="photo-btn" name="photo-btn" class="form-control" type="button" value="Photo">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="desk-canvas-td" class="form-group">
+                    <label>Seating Location:</label>
+                    <canvas id="desk-canvas" class="form-control"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--browse button should open an accordion of the gallery photos on the device-->
+
+    <!--this is where the seating location canvas drag and drop will be located-->
+
+</form>
+</body>
+</html>

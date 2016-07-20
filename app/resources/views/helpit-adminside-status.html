@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">-->
-    <title>Ticket Status</title>
+    <title>Admin Review Ticket Status</title>
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../../../libs/bootstrap-3.3.6-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../resources/css/appstyle.css">
@@ -22,11 +22,13 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span id="notifications">2</span><span class="caret"></span>
+                            <span id="notifications">4</span><span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu notif-dropdown">
-                            <li><a href="#">You're Ticket Has Been Reviewed</a></li>
-                            <li><a href="#">Approve Rescue Session</a></li>
+                            <li><a href="#">You Got A New Survey Review</a></li>
+                            <li><a href="#">Someone Just Sent A ticket</a></li>
+                            <li><a href="#">Your Assistance Is Ready To Be Reviewed</a></li>
+                            <li><a href="#">New User In Database</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -37,8 +39,8 @@
                             <span class="glyphicon glyphicon-menu-hamburger big-menu-button"></span>
                         </a>
                         <ul class="dropdown-menu right-menu-dropdown">
-                            <li><a href="#">Create New Ticket</a></li>
-                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Review History</a></li>
+                            <li><a href="#">Public Profile</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">About Help IT</a></li>
                         </ul>
@@ -50,19 +52,18 @@
     <div class="logo">
         <button type="button" class="btn btn-default helpitlogo"></button>
     </div>
-    <!--whenever logo is pressed it will bring you back to the home page-->
+
 </header>
 <div id="ticket-top-notifications">
-    <!--must use bootstraps grid system (whatever that means) and mark this as the top notification of the ticket status-->
     <table>
         <tr>
             <td>
-                <span class="ticket-top-status-number">2</span>
-                <span class="ticket-top-status-label">New</span>
+                <span class="ticket-top-status-number">4</span>
+                <span class="ticket-top-status-label">New Tickets</span>
             </td>
             <td>
                 <span class="ticket-top-status-number">10</span>
-                <span class="ticket-top-status-label">Pending</span>
+                <span class="ticket-top-status-label">In Process</span>
             </td>
             <td>
                 <span class="ticket-top-status-number">28</span>
@@ -85,7 +86,7 @@
             <td class="ticket-status-date">10/06/2016</td>
             <td>Pending</td>
             <td class="ticket-status-icon">
-                <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
             </td>
         </tr>
         <tr>
@@ -93,14 +94,14 @@
             <td>Done</td>
             <td class="ticket-status-icon">
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span class="send-review-button-label">Review</span></td>
+                </td>
             <!--should be gray when sent-->
         </tr>
         <tr>
             <td class="ticket-status-date">04/06/2016</td>
             <td>Done</td>
             <td class="ticket-status-icon">
-                <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
             </td>
             <!--should be gray when sent-->
         </tr>

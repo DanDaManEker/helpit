@@ -38,6 +38,8 @@ div#help-it-confirmation {
 }
 .helpit-horrible{
     color: #fff;
+    position: absolute;
+    right: 30px;
 }
 .helpit-checkboxes{
     margin: 0 10px 0 9px;
@@ -91,7 +93,7 @@ textarea{
 ul.nav.navbar-nav.navbar-right {
     position: absolute;
     right: 10px;
-    top: 0px;
+    top: 0;
 }
 @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
@@ -196,6 +198,13 @@ div#ticket-top-notifications td {
     position: fixed;
     color: white;
 }
+.helpit-survey-tickboxes{
+    text-align: center;
+
+}
+input.helpit-checkboxes {
+    margin: 0 10px 0 10px;
+}
 .survey-submit-btn{
     margin-top: 20px;
 }
@@ -204,10 +213,9 @@ div#ticket-top-notifications td {
     display:inline-block;
 
 }
-#menu-button{
+.helpitsurvey #menu-button{
     margin-right: 5px;
     right: 0;
-
 }
 .helpitlogo:hover {
     background-color: transparent;
@@ -228,6 +236,10 @@ form#create-user td *{
     padding: 10px;
     color: #6d7e8e;
 }
+.helpit-user-info{
+    text-align: center;
+    font-size: 1.2em;
+}
 form#create-user td input[type="button"], form#create-user td button[type="button"], form#create-user td button[type="button"] span{
     color: white;
     margin: 0;
@@ -246,7 +258,7 @@ a.dropdown-toggle{
 .container-padding{
     padding-top: 30px;
 }
-#submit-btn{
+.submit-btn{
     background-color: #2ac7c9;
     color: white;
 
@@ -254,8 +266,16 @@ a.dropdown-toggle{
 .helpit-questions{
     border-bottom:1px solid;
     color: #fff;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 20px 0;
 
+}
+.helpit-questions-text{
+    font-size: 1.3em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+span.helpit-horrible {
+    position: absolute;
 }
 .button-style{
     width: 100%;
