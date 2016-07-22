@@ -7,10 +7,6 @@ header{
     padding-top: 17px;
     padding-bottom: 4px;
 }
-/*body table#helpit-new-ticket-form tbody td tr{*/
-    /*text-align: center;*/
-    /*!*help izack!!!!*!*/
-/*}*/
 table#helpit-new-ticket-form {
     width: 19%;
     margin-left: 27%;
@@ -138,7 +134,7 @@ h1{
 .ticket-top-status-number{
     font-weight: bold;
 }
-#ticket-status-table{
+#ticket-status-table {
     width: 100%;
 }
 #ticket-status-table tr{

@@ -6,6 +6,7 @@ $(document).ready(function(){
     goNewSurvey();
     getStatusTable();
     getStatusUserTable();
+    goNewRequest();
 });
 function goBack() {
     $(".big-back-button").click(function(){
@@ -36,9 +37,17 @@ function goStatusCheck(){
 }
 
 function goNewSurvey(){
-    $(".helpit-new-ticket").click(function() {
+    $(".ticket-status-user-tbody").click(function() {
         location.href = "helpit-new-ticket.html";
     });
+}
+//can't get this to link to the survey page'
+function goNewRequest(){
+    $("#ticket-status-table").click(function(){
+       window.location.href = "helpit-survey.html";
+        if(currentPage.indexOf("ticket-status.html")> -1)
+        return false;
+            });
 }
 
 function goSurvey(){
@@ -51,7 +60,7 @@ function goSurvey(){
 
 function getStatusTable() {
     $.ajax({
-            url: "../../data/ticket", method: "get"
+            url: "../../data/ticket.json", method: "get"
         })
         .done(function (res) {
             var tableHTML = '';
@@ -68,7 +77,7 @@ function getStatusTable() {
 }
     function getStatusUserTable() {
         $.ajax({
-                url: "../../data/userTicket", method: "get"
+                url: "../../data/userTicket.json", method: "get"
             })
             .done(function (res) {
                 var tableHTML = '';
