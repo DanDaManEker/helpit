@@ -1,4 +1,4 @@
-# helpit
+# HelpIT
 A web application made for help desk and system admins
 ver 0.0.1
 Inspired by my experience while working at HelloFresh, I designed and created this web app that helps Help-Desk technicians and System Admins in their daily chores. the idea of making it a mobile first web-app was so it could be accessed anywhere with an internet connection, even if your computer is not working properly.
